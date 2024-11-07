@@ -1,0 +1,25 @@
+{
+  "id": 1,
+  "name": "Солнце",
+  "type": "Желтый карлик",
+  "log": {
+    "dateCreation": "2024-09-05 18:16:16",
+    "lastModified": "2024-09-05 18:16:16",
+    "version": 0
+  }
+}
+
+private UUID registerProductInstanceId(Register register) {
+  if ( register == null ) {
+    return null;
+  }
+  ProductInstance productInstance = register.getProductInstance();
+  if ( productInstance == null ) {
+    return null;
+  }
+  UUID id = productInstance.getId();
+  if ( id == null ) {
+    return null;
+  }
+  return id;
+}

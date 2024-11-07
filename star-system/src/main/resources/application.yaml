@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: star-system
+  profiles:
+    active: dev
